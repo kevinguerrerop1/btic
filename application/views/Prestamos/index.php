@@ -25,14 +25,20 @@
           <th scope="col">Servicio</th>
           <th scope="col">Ubicacion</th>
           <th scope="col">Fecha de entrega</th>
-          <th scope="col">Fecha retiro</th>
-          <th scope="col">Acciones</th>
         </tr>
       </thead>
       <tbody class="table-group-divider">
+        <?php foreach($prestamos as $prestamo){ ?>
         <tr>
-
-        </tr>
+          <td><?php echo $prestamo->id?></td>
+          <td><?php echo $prestamo->marca?> <?php echo $prestamo->modelo?> <?php echo $prestamo->nroserie?></td>
+          <td><?php echo $prestamo->ps?></td>
+          <td><?php echo $prestamo->pe?></td>
+          <td><?php echo $prestamo->nomserv?></td>
+					<td><?php echo $prestamo->ubicacion?></td>
+					<td><?php echo $prestamo->fchentrega?></td>
+					</tr>
+        <?php }?>
       </tbody>
     </table>
   </div>

@@ -12,8 +12,8 @@ class PrestamosControllers extends CI_Controller {
     }
     
     public function index(){
-        //$datos['categorias']=$this->Categorias->view();
-		$this->load->view('Prestamos/index');
+        $datos['prestamos']=$this->Prestamos->view();
+		$this->load->view('Prestamos/index',$datos);
     }
 
     public function create(){
