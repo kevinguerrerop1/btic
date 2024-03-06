@@ -11,7 +11,7 @@
 </head>
 <body>
 	<br>
-	<?php echo form_open('InventarioControllers/store'); ?>
+	<?php echo form_open('PrestamosControllers/store'); ?>
 		<div class="container">
 			<h2>Ingreso Prestamos</h2>
 			<br>
@@ -39,7 +39,7 @@
 			<input type="text" id="ubicacion" name="ubicacion" class="form-control" placeholder="Ubicacion" aria-describedby="basic-addon1">	
 			<br>		
 			<label for="">Fecha Entrega</label>
-			<input type="datetime" id="modelo" name="modelo" class="form-control" placeholder="Modelo" value="<?php echo date("d-m-Y");?>" aria-describedby="basic-addon1" readonly>		
+			<input type="text" id="fchentrega" name="fchentrega" class="form-control" placeholder="Modelo" value="<?php echo date("d-m-Y");?>" aria-describedby="basic-addon1" readonly>		
 			<br>	
 			
 			<button type="submit" class="btn btn-primary">Ingresar</button>

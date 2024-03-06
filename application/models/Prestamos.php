@@ -8,7 +8,6 @@
         }
 
 		public function save($pres){
-
 			$this->db->insert('prestamos',$pres);
 		}
     }

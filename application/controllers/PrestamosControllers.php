@@ -23,12 +23,12 @@ class PrestamosControllers extends CI_Controller {
     }
 
 	public function store(){
-		$pres['']=$this->input->post('');
-		$pres['']=$this->input->post('');
-		$pres['']=$this->input->post('');
-		$pres['']=$this->input->post('');
-		$pres['']=$this->input->post('');
-		$pres['']=$this->input->post('');
+		$pres['idart']=$this->input->post('idart');
+		$pres['ps']=$this->input->post('ps');
+		$pres['pe']=$this->input->post('pe');
+		$pres['idser']=$this->input->post('idser');
+		$pres['ubicacion']=$this->input->post('ubicacion');
+		$pres['fchentrega']=$this->input->post('fchentrega');
 
 		$this->Prestamos->save($pres);
 		redirect('PrestamosControllers/index');
