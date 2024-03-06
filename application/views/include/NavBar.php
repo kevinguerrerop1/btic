@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="../assets/bootstrap5.3/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../assets/bootstrap5.3/js/bootstrap.min.js" rel="stylesheet">
+		<script src="../assets/bootstrap5.3/js/bootstrap.bundle.min.js"></script>
     <title>Document</title>
 </head>
 <body>
