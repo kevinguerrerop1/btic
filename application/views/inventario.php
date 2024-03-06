@@ -34,8 +34,7 @@
           <td><?php echo $articulo->modelo ?></td>
           <td><?php echo $articulo->nroserie ?></td>
           <td><?php echo $articulo->nomcat ?></td>
-					<td><button type="button" class="btn btn-info">Info</button></td>
-        </tr>
+					</tr>
         <?php }?>
       </tbody>
     </table>

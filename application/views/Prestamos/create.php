@@ -13,28 +13,35 @@
 	<br>
 	<?php echo form_open('InventarioControllers/store'); ?>
 		<div class="container">
-			<h2>Ingrese nuevo activo</h2>
-			<label for="">Marca</label>
-			<input type="text" id="marca" name="marca" class="form-control" placeholder="Marca" aria-describedby="basic-addon1">
+			<h2>Ingreso Prestamos</h2>
 			<br>
-			<label for="">Modelo</label>
-			<input type="text" id="modelo" name="modelo" class="form-control" placeholder="Modelo" aria-describedby="basic-addon1">
-			<br>
-			<label for="">Nro. Serie</label>
-			<input type="text" id="nroserie" name="nroserie" class="form-control" placeholder="Nro. Serie" aria-describedby="basic-addon1">
-			<br>
-			<select class="form-select" aria-label="Default select example" id="idcat" name="idcat">
+			<label for="">Articulo</label>
+			<select class="form-select" aria-label="Default select example" id="idart" name="idart">
 			<?php foreach($Inventario as $Inventari){ ?>
 				<option value=<?php echo $Inventari->id ?>><?php echo $Inventari->marca. " " .$Inventari->modelo. " " .$Inventari->nroserie   ?></option>
 			<?php }?>
 			</select>
 			<br>
-			<select class="form-select" aria-label="Default select example" id="idcat" name="idcat">
-			<?php foreach($Inventario as $Inventari){ ?>
-				<option value=<?php echo $Inventari->id ?>><?php echo $Inventari->marca. " " .$Inventari->modelo. " " .$Inventari->nroserie   ?></option>
+			<label for="">Persona Solicitante</label>
+			<input type="text" id="ps" name="ps" class="form-control" placeholder="Persona Solicitante" aria-describedby="basic-addon1">
+			<br>
+			<label for="">Persona Entrega</label>
+			<input type="text" id="pe" name="pe" class="form-control" placeholder="Persona Entrega" aria-describedby="basic-addon1">			
+			<br>
+			<label for="">Servicio</label>
+			<select class="form-select" aria-label="Default select example" id="idser" name="idser">
+			<?php foreach($Servicios as $Servicio){ ?>
+				<option value=<?php echo $Servicio->id ?>><?php echo $Servicio->nomserv?></option>
 			<?php }?>
 			</select>
 			<br>
+			<label for="">Ubicacion</label>
+			<input type="text" id="ubicacion" name="ubicacion" class="form-control" placeholder="Ubicacion" aria-describedby="basic-addon1">	
+			<br>		
+			<label for="">Fecha Entrega</label>
+			<input type="datetime" id="modelo" name="modelo" class="form-control" placeholder="Modelo" value="<?php echo date("d-m-Y");?>" aria-describedby="basic-addon1" readonly>		
+			<br>	
+			
 			<button type="submit" class="btn btn-primary">Ingresar</button>
 		</div>
 	<?php echo form_close(); ?>

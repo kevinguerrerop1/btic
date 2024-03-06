@@ -17,9 +17,23 @@ class PrestamosControllers extends CI_Controller {
     }
 
     public function create(){
+		$datos['Servicios']=$this->Servicios->view();
 		$datos['Inventario']=$this->Inventario->view();
         $this->load->view("Prestamos/create",$datos);
     }
+
+	public function store(){
+		$pres['']=$this->input->post('');
+		$pres['']=$this->input->post('');
+		$pres['']=$this->input->post('');
+		$pres['']=$this->input->post('');
+		$pres['']=$this->input->post('');
+		$pres['']=$this->input->post('');
+
+		$this->Prestamos->save($pres);
+		redirect('PrestamosControllers/index');
+
+	}
     
     
     
