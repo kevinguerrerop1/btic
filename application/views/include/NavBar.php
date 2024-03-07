@@ -26,7 +26,7 @@
 					<li class="nav-item">
             <a class="nav-link active" aria-current="page" href="<?php echo site_url('ServiciosControllers/index')?>">Servicios</a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
           <li class="nav-item dropdown">
@@ -38,7 +38,7 @@
               <li><a class="dropdown-item" href="#">Another action</a></li>
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
