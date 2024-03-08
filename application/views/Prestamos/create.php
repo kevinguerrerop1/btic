@@ -23,7 +23,11 @@
 			<input type="text" id="ps" name="ps" class="form-control" placeholder="Persona Solicitante" aria-describedby="basic-addon1">
 			<br>
 			<label for="">Persona Entrega</label>
-			<input type="text" id="pe" name="pe" class="form-control" placeholder="Persona Entrega" aria-describedby="basic-addon1">			
+			<select class="form-select" aria-label="Default select example" id="pe" name="pe">
+			<?php foreach($Users as $user){ ?>
+				<option value=<?php echo $user->id ?>><?php echo $user->Nombre?> <?php echo $user->Apellido?></option>
+			<?php }?>
+			</select>			
 			<br>
 			<label for="">Servicio</label>
 			<select class="form-select" aria-label="Default select example" id="idser" name="idser">

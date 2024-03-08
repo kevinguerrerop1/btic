@@ -9,6 +9,7 @@ class PrestamosControllers extends CI_Controller {
 		$this->load->model('Prestamos');
 		$this->load->model('Inventario');
 		$this->load->model('Servicios');
+		$this->load->model('Users');
     }
     
     public function index(){
@@ -19,6 +20,7 @@ class PrestamosControllers extends CI_Controller {
     public function create(){
 		$datos['Servicios']=$this->Servicios->view();
 		$datos['Inventario']=$this->Inventario->view();
+		$datos['Users']=$this->Users->view();
         $this->load->view("Prestamos/create",$datos);
     }
 
