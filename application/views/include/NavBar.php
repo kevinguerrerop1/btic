@@ -26,6 +26,9 @@
 					<li class="nav-item">
             <a class="nav-link active" aria-current="page" href="<?php echo site_url('ServiciosControllers/index')?>">Servicios</a>
           </li>
+					<li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="<?php echo site_url('UsersControllers/index')?>">Usuarios</a>
+          </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
           </li>
