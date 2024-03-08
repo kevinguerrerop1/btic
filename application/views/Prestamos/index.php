@@ -30,7 +30,7 @@
           <td><?php echo $prestamo->id?></td>
           <td><?php echo $prestamo->marca?> <?php echo $prestamo->modelo?> <?php echo $prestamo->nroserie?></td>
           <td><?php echo $prestamo->ps?></td>
-          <td><?php echo $prestamo->pe?></td>
+          <td><?php echo $prestamo->Nombre?> <?php echo $prestamo->Apellido?></td>
           <td><?php echo $prestamo->nomserv?></td>
 					<td><?php echo $prestamo->ubicacion?></td>
 					<td><?php echo $prestamo->fchentrega?></td>
