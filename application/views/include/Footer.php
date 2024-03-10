@@ -9,7 +9,11 @@
 <body>
 	<script src="<?php echo base_url(); ?>assets/datatable/DataTables/js/dataTables.min.js"></script>
 		<script>
-			let table = new DataTable('#myTable');
+			var table = new DataTable('#myTable', {
+				language: {
+					url: '//cdn.datatables.net/plug-ins/2.0.2/i18n/es-ES.json',
+				},
+			});
 		</script>
 </body>
 </html>
