@@ -6,6 +6,8 @@
 		<link href="<?php echo base_url(); ?>assets/bootstrap5.3/css/bootstrap.min.css" rel="stylesheet">
 		<link href="<?php echo base_url(); ?>assets/bootstrap5.3/js/bootstrap.min.js" rel="stylesheet">
 		<script src="<?php echo base_url(); ?>assets/bootstrap5.3/js/bootstrap.bundle.min.js"></script>
+		<link href="<?php echo base_url(); ?>assets/datatable/DataTables/css/dataTables.dataTables.min.css" rel="stylesheet">
+		
 		<!-- <link href="../assets/bootstrap5.3/css/bootstrap.min.css" rel="stylesheet">
 		<link href="../assets/bootstrap5.3/js/bootstrap.min.js" rel="stylesheet">
 		<script src="../assets/bootstrap5.3/js/bootstrap.bundle.min.js"></script> -->
@@ -49,5 +51,7 @@
       </div>
     </div>
   </nav>
+	
 </body>
+
 </html>

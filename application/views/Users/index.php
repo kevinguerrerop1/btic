@@ -12,7 +12,7 @@
     <form name="form" action="<?php echo site_url('ServiciosControllers/create')?>" method="post">
       <button type="submit" class="btn btn-primary">Crear Nuevo Producto</button>
     </form>
-    <table class="table">
+    <table class="table" id="myTable">
       <thead>
         <tr>
 			<th scope="col">#</th>
@@ -33,5 +33,6 @@
       </tbody>
     </table>
   </div>
+	<?php $this->load->view("include/Footer");?>
 </body>
 </html>

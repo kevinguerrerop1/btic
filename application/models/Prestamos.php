@@ -15,7 +15,6 @@
 			$this->db->insert('prestamos',$pres);
 		}
 
-		public function alksjdlas
     }
 
 

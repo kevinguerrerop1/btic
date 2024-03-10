@@ -15,7 +15,7 @@
     <form name="form" action="<?php echo site_url('CategoriasControllers/create')?>" method="post">
       <button type="submit" class="btn btn-primary">Crear Nueva Categoria</button>
     </form>
-    <table class="table">
+    <table class="table" id="myTable">
       <thead>
         <tr>
           <th scope="col">#</th>
@@ -34,5 +34,6 @@
       </tbody>
     </table>
   </div>
+	<?php $this->load->view("include/Footer");?>
 </body>
 </html>
