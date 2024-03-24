@@ -25,16 +25,19 @@
         </tr>
       </thead>
       <tbody class="table-group-divider">
+			<?php if($articulos){ ?>
         <?php foreach($articulos as $articulo){ ?>
         <tr>
-          <td><?php echo $articulo->id ?></td>
-          <td><?php echo $articulo->marca ?></td>
-          <td><?php echo $articulo->modelo ?></td>
-          <td><?php echo $articulo->nroserie ?></td>
-          <td><?php echo $articulo->nomcat ?></td>
+          <td><?php echo $articulo->ID_ART ?></td>
+          <td><?php echo $articulo->MARCA?></td>
+          <td><?php echo $articulo->MODELO ?></td>
+          <td><?php echo $articulo->NROSERIE ?></td>
+          <td><?php echo $articulo->NOMCAT ?></td>
 					<td><button type="button" class="btn btn-danger" disabled>Dar de Baja</button></td>
 					</tr>
-        <?php }?>
+					<?php }?>
+				<?php }else{ ?>            
+        <?php } ?>
       </tbody>
     </table>
   </div>

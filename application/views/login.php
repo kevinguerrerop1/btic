@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<form  id="form_prest" name="form_prest" accept-charset="" method="post" action="<?php echo site_url('usuarioscontrollers/verificar_usuario')?>">
+<form  id="form_prest" name="form_prest" accept-charset="" method="post" action="<?php echo site_url('userscontrollers/verificar_usuario')?>">
     <div class="container">
             <h2>Login</h2>
             <!-- Email input -->

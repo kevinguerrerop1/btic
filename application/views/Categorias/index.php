@@ -21,13 +21,16 @@
         </tr>
       </thead>
       <tbody class="table-group-divider">
+			<?php if($categorias){ ?>
         <?php foreach($categorias as $categoria){ ?>
         <tr>
-          <td><?php echo $categoria->id ?></td>
-          <td><?php echo $categoria->nomcat ?></td>
-          <td><a onClick="location.href='<?php echo site_url('InventarioControllers/viewinventarioxcat/'.$categoria->id.'')?>'" type="button" class="btn btn-danger">Info</a></td>              
+          <td><?php echo $categoria->ID_CAT ?></td>
+          <td><?php echo $categoria->NOMCAT ?></td>
+          <td><a onClick="location.href='<?php echo site_url('InventarioControllers/viewinventarioxcat/'.$categoria->ID_CAT.'')?>'" type="button" class="btn btn-danger">Info</a></td>              
         </tr>
         <?php }?>
+				<?php }else{ ?>            
+        <?php } ?>
       </tbody>
     </table>
   </div>

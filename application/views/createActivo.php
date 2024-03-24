@@ -22,7 +22,7 @@
 			<br>
 			<select class="form-select" aria-label="Default select example" id="idcat" name="idcat">
 			<?php foreach($categorias as $categoria){ ?>
-				<option value=<?php echo $categoria->id ?>><?php echo $categoria->nomcat ?></option>
+				<option value=<?php echo $categoria->ID_CAT ?>><?php echo $categoria->NOMCAT ?></option>
 			<?php }?>
 			</select>
 			<br>

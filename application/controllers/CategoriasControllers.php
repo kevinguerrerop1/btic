@@ -11,7 +11,8 @@ class CategoriasControllers extends CI_Controller {
     
     public function index(){
         $datos['categorias']=$this->Categorias->view();
-		$this->load->view('Categorias/index',$datos);
+		var_dump($datos);
+		//$this->load->view('Categorias/index',$datos);
     }
 
     public function create(){

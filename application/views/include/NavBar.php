@@ -32,7 +32,7 @@
             <a class="nav-link active" aria-current="page" href="<?php echo site_url('ServiciosControllers/index')?>">Servicios</a>
           </li>
 					<li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="<?php echo site_url('UsersControllers/index')?>">Usuarios</a>
+            <a class="nav-link active" aria-current="page" href="<?php echo site_url('userscontrollers/index')?>">Usuarios</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link" href="#">Pricing</a>
