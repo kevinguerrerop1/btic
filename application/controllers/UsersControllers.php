@@ -26,15 +26,24 @@ class UsersControllers extends CI_Controller {
             $obj = json_decode($result);
             $usuario = $obj->{'NOMUSU'};
             $apellido = $obj->{'APEUSU'};
+			$tusu = $obj->{'ID_T_USU'};
             $id = $obj->{'ID_USU'};
 
-            $usuario_data = array("usuario" => $usuario,"id" => $id, "logueado" => true);
+            $usuario_data = array("usuario" => $usuario,"id" => $id, "logueado" => true,"tusu" => $tusu);
 
             $this->session->set_userdata($usuario_data);
+			$tusu = $this->session->userdata('tusu');
 
-            //var_dump($usuario_data);
-
-            redirect("prestamoscontrollers/create",$usuario_data);
+			switch ($tusu) {
+                case '1':
+                    redirect("inventario");
+                    break;
+                case '2':
+                    redirect('cliente/index/'.$mes_id.'/'.$ano_id);
+                    break;
+			}
+            
+            //redirect("prestamoscontrollers/create",$usuario_data);
         }else{
             $this->session->set_flashdata("msg-failed","Nombre de Usuario o Contraseña incorrectos.");
             redirect("userscontrollers/index","refresh");
